@@ -9,12 +9,11 @@ Goal:
 - Collect user reviews of Samsung phones from Digikala.
 - Clean and normalize the Persian text.
 - Use a transformer-based Persian language model (ParsBERT) to:
-  - Generate weak/initial labels for comments (if needed).
+  - Generate weak/initial labels for comments.
   - Create dense sentence embeddings for each comment.
 - Train a classical SVM classifier on these embeddings to predict **positive** / **negative** sentiment.
 - Evaluate the model and provide analysis of the results.
 
-This work was implemented as part of a supervised machine learning workshop assignment on **sentiment analysis of Digikala Samsung mobile reviews**.
 
 ## 2. Repository Structure
 
@@ -34,5 +33,6 @@ This work was implemented as part of a supervised machine learning workshop assi
 │   └── task.ipynb
 ├── src/
 │   └── digikala_crawl.py
+
 
 
