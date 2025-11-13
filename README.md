@@ -2,6 +2,8 @@
 
 This repository contains a complete pipeline for crawling, preprocessing, and modeling sentiment on Persian reviews of **Samsung mobile phones** from **Digikala**, using **Shekar** for text normalization, **ParsBERT** for embeddings, and a **Support Vector Machine (SVM)** classifier.
 
+---
+
 ## 1. Project Overview
 
 Goal:
@@ -14,6 +16,7 @@ Goal:
 - Train a classical SVM classifier on these embeddings to predict **positive** / **negative** sentiment.
 - Evaluate the model and provide analysis of the results.
 
+---
 
 ## 2. Repository Structure
 
@@ -31,8 +34,5 @@ Goal:
 │   └── svm_parsbert_pipeline.pkl
 ├── notebooks/
 │   └── task.ipynb
-├── src/
-│   └── digikala_crawl.py
-
-
-
+└── src/
+    └── digikala_crawl.py
