@@ -44,3 +44,34 @@ High-level pipeline:
 │   └── digikala_sentiment.ipynb
 └── src/
     └── digikala_crawl.py
+
+---
+
+
+## 4. Quick Start
+
+After cloning the repository :
+
+```bash
+# 1. crawl Digikala Samsung reviews
+python src/digikala_crawl.py   --list-pages 5   --max-products 100   --per-product-pages 5   --per-product-max-comments 500   --delay 0.6   --debug
+
+# 2. run the notebook for training & analysis
+jupyter notebook notebooks/digikala_sentiment.ipynb
+```
+
+You can adjust crawl parameters depending on how much data you want and how polite you want to be with the server.
+
+---
+
+## 5. Crawling Digikala Samsung reviews
+
+The script `src/digikala_crawl.py` calls Digikala's public APIs to:
+
+- Enumerate all **mobile phone** products.
+- Filter products whose brand is **Samsung**.
+- Fetch product details and user comments.
+- Save:
+  - `Digikala_products.csv` – Samsung product info.
+  - `Digikala_comments.csv` – user reviews for those products.
+
