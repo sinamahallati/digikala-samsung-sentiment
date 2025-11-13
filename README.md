@@ -44,8 +44,8 @@ High-level pipeline:
 │   └── digikala_sentiment.ipynb
 └── src/
     └── digikala_crawl.py
+'''
 
----
 
 
 ## 4. Quick Start
@@ -74,4 +74,5 @@ The script `src/digikala_crawl.py` calls Digikala's public APIs to:
 - Save:
   - `Digikala_products.csv` – Samsung product info.
   - `Digikala_comments.csv` – user reviews for those products.
+
 
