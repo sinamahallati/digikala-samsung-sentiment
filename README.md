@@ -16,6 +16,14 @@ Goal:
 - Train a classical SVM classifier on these embeddings to predict **positive** / **negative** sentiment.
 - Evaluate the model and provide analysis of the results.
 
+High-level pipeline:
+
+1. **Crawl** Digikala mobile category, filter **Samsung** products, and collect all associated comments.
+2. **Preprocess** Persian comments (normalization with Shekar, cleaning, filtering).
+3. **Embed** comments using ParsBERT.
+4. **Train** an SVM classifier on embeddings.
+5. **Analyze** model performance and sentiment distribution.
+
 ---
 
 ## 2. Repository Structure
@@ -33,6 +41,6 @@ Goal:
 ├── models/
 │   └── svm_parsbert_pipeline.pkl
 ├── notebooks/
-│   └── task.ipynb
+│   └── digikala_sentiment.ipynb
 └── src/
     └── digikala_crawl.py
