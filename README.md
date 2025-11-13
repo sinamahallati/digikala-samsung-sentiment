@@ -34,5 +34,5 @@ This work was implemented as part of a supervised machine learning workshop assi
 │   └── task.ipynb
 ├── src/
 │   └── digikala_crawl.py
-└── report/
-    └── تسک_کارگاه_یادگیری_ماشین_نظارت_شده.pdf
+
+
